@@ -13,7 +13,7 @@ A simple Express.js web server, containerized with Docker, and exposed via Nginx
    ```
 2. **Run Nginx Proxy**
    ```sh
-   docker run --name nginx-proxy -d -p 80:80 -v ${PWD}/nginx.conf:/etc/nginx/nginx.conf:ro nginx
+   docker run --name nginx-proxy -d -p 80:80 -v "path\to\local\nginx.conf:/etc/nginx/nginx.conf:ro" nginx
    ```
 3. **Test It!**
    ```sh
@@ -29,3 +29,7 @@ A simple Express.js web server, containerized with Docker, and exposed via Nginx
 - `package.json` – Node.js dependencies
 - `Dockerfile` – Container setup
 - `nginx.conf` – Nginx reverse proxy config
+
+---
+
+Made with ❤️ by Bruce NKUNDABAGENZI
